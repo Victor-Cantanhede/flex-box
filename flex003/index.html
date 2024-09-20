@@ -12,6 +12,11 @@
             /*A configuração DISPLAY: FLEX sempre deve ser na div "pai", ou seja, no conteiner*/
             display: flex;
             flex-direction: row;
+
+            /*
+            - Justify-content = Alinha no eixo principal
+            - Align-items = Alinha no eixo transversal
+            */
         }
 
         div.item {
@@ -20,6 +25,17 @@
             padding: 10px;
             border: 1px solid black;
             text-align: center;
+        }
+
+        div.imagem {
+            height: 300px;
+            padding: 10px;
+            background-color: rgb(224, 101, 101);
+
+            /*CENTRALIZANDO IMG COM FLEX BOX*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
@@ -33,6 +49,9 @@
         <div class="item">Exemplo de bloco E</div>
         <div class="item">Exemplo de bloco F</div>
         <div class="item">Exemplo de bloco G</div>
+    </div>
+    <div class="imagem">
+        <img src="imagens/print001.png" alt="print001">
     </div>
 </body>
 </html>
