@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        div.conteiner {
+            padding: 10px;
+            background-color: lightblue;
+
+            /*A configuração DISPLAY: FLEX sempre deve ser na div "pai", ou seja, no conteiner*/
+            display: flex;
+        }
+
+        div.item {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Flex Box</h1>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
